@@ -1,0 +1,29 @@
+Subject: Data Quality Evaluation and Recommendations | Fetch Rewards Data
+
+Hi ABC Stakeholder,
+
+I hope you are doing well. I wanted to share the results of the recent data quality evaluation for the Fetch Rewards data. I performed a series of data quality checks, including looking for missing values, checking for data type consistency, identifying duplicate records, and validating date ranges. Below is a summary of my findings, along with some questions that would give me more clarity on optimizing data quality and performance.
+
+1. Data Quality Issues Identified:
+  - Missing Values: Critical fields such as userId, receipt_id, totalSpent, and product_id in receipt items contain missing values.
+  - Non-Numeric Values in Numeric Fields: Non-numeric values found in totalSpent fields, cause potential calculation errors.
+  - Duplicate Records: Duplicate entries detected for user_id and receipt_id.
+  - Invalid Date Ranges: Three years earlier dates found in purchaseDate, which doesn't make sense to be processed now.
+  - Referential Integrity: Receipts referencing non-existent user IDs and Brand IDs.
+  - Inconsistent Receipt Data: Items in each receipt scanned contain inconsistent data fields. There have been entries where basic information like Item ID is missing from the record.
+
+2. Questions/Ask About the Data:
+  - I need clarification on the data entry protocols and if any known issues might cause the inconsistencies.  
+  - I would like to know if any specific business rules should be applied to the data validation process.
+  - Could you please contact the development team and provide me with the documentation on data sources, expected data formats, and business rules? This would help me refine the data quality checks and ensure data integrity.
+
+3. Performance and Scaling Concerns:
+  - As the data volume grows, the performance of analytical processes may degrade. I recommend implementing automated data quality checks and considering scalable cloud-based storage platforms to handle increasing data volumes.
+  - Once all the analytics and validation processes are completed, I would also want to take some time to optimize the SQL queries to ensure the performance is not hampered.
+  - Once we move this solution to a cloud-based platform, I would also want to work on backup and recovery processes for the fetch data. I'm happy to discuss these concerns in our next connect!
+
+Please let me know if you have any questions. I'm looking forward to working together to improve the data quality.
+
+Best regards,
+
+Naman Gupta
